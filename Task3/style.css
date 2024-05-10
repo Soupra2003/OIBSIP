@@ -1,0 +1,94 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color:gray; */
+    /* background: linear-gradient(120deg, blue,rgb(255, 0, 162)); */
+    background-image: url(draw-trees_fb-img_1200x800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+
+.converter{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    /* background: linear-gradient(120deg, blue, transparent,rgb(255, 0, 162)); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.493),
+        rgba(255, 255, 255, 0.484)
+    );
+    
+    
+}
+select, input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inbox{
+    width: 95% !important;
+}
+
+button{
+    background-color: #329636;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+}
+
+button:hover{
+    background-color: #55e538;
+    border: 1px solid #040704;
+    color: black;
+}
+#result{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width:500px){
+    .converter{
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    h2{
+        color: #333;
+        animation: fadeIn 1s ease-in-out;
+    }
+}
